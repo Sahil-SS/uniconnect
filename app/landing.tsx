@@ -47,20 +47,18 @@ export default function LandingScreen() {
           text="Get Started"
           onPress={() => router.push("/(auth)/SignUp")}
         />
-        <Pressable
-        onPress={() => router.push("/(auth)/LogIn")}
-        >
-        <Text
-          style={{
-            color: colors.gray,
-            fontSize: 16,
-            textAlign: "center",
-            marginTop: 10,
-          }}
-        >
-          Already have an account?{" "}
-          <Text style={{ color: colors.primary }}>Login Here</Text>
-        </Text>
+        <Pressable onPress={() => router.push("/(auth)/LogIn")}>
+          <Text
+            style={{
+              color: colors.gray,
+              fontSize: 16,
+              textAlign: "center",
+              marginTop: 10,
+            }}
+          >
+            Already have an account?{" "}
+            <Text style={{ color: colors.primary }}>Login Here</Text>
+          </Text>
         </Pressable>
       </View>
     </View>
