@@ -10,9 +10,9 @@ export default function LandingScreen() {
     <View>
       <Image
         source={require("./../assets/images/login.png")}
-        style={{ width: "100%", height: 480 }}
+        style={{ width: "100%", height: 480,  backgroundColor: colors.background  }}
       />
-      <View style={{ padding: 20 }}>
+      <View style={{ padding: 20,}}>
         <Text
           style={{
             fontSize: 30,
@@ -45,7 +45,9 @@ export default function LandingScreen() {
         </Text>
         <Button
           text="Get Started"
-          onPress={() => router.push("/(auth)/SignUp")}
+          // onPress={() => router.push("/(auth)/SignUp")}
+          onPress={() => router.push("/(auth)/LogIn")}
+
         />
         <Pressable onPress={() => router.push("/(auth)/LogIn")}>
           <Text

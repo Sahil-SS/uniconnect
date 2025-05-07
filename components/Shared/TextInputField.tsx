@@ -11,7 +11,7 @@ export default function TextInputField({label,onChangeText,password=false}:TextI
   return (
     <View>
       <Text style={{marginTop:15}}>{label}</Text>
-      <TextInput placeholder={label} style={{padding:15, borderWidth:0.2, borderRadius:5, marginTop:5, fontSize:17}} secureTextEntry={password} />
+      <TextInput placeholder={label} style={{padding:15, borderWidth:0.2, borderRadius:5, marginTop:5, fontSize:17}} secureTextEntry={password} onChangeText={onChangeText}/>
     </View>
   )
 }

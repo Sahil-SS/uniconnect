@@ -18,7 +18,7 @@ const Button = ({text,onPress}:ButtonProps) => {
         borderRadius: 10,
       }}
     >
-      <Text style={{ fontSize: 18, color: colors.white, textAlign: "center" }}>
+      <Text style={{ fontSize: 18, color: colors.white, textAlign: "center", }}>
         {text}
       </Text>
       </TouchableOpacity>

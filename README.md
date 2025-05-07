@@ -52,3 +52,4 @@ Join our community of developers creating universal apps.
 
 
 for the log in screen - lamnding.tsx - change login.png
+Have to work on the signup screen and log in screen 
