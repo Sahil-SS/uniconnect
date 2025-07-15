@@ -6,7 +6,7 @@
 
 // // Your web app's Firebase configuration
 // const firebaseConfig = {
-//   apiKey: "AIzaSyDycpcT8R0VnkFFpejl_IXgLh-VlSXMVhg",
+//   apiKey: "",
 //   authDomain: "uniconnect-c3ded.firebaseapp.com",
 //   projectId: "uniconnect-c3ded",
 //   storageBucket: "uniconnect-c3ded.appspot.com", 

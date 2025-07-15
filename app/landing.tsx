@@ -6,56 +6,73 @@ import { useRouter } from "expo-router";
 
 export default function LandingScreen() {
   const router = useRouter();
+
   return (
-    <View>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      {/* Header Image */}
       <Image
         source={require("./../assets/images/login.png")}
-        style={{ width: "100%", height: 480,  backgroundColor: colors.background  }}
+        style={{
+          width: "100%",
+          height: 480,
+          resizeMode: "cover",
+          backgroundColor: colors.background,
+        }}
       />
-      <View style={{ padding: 20,}}>
+
+      {/* Welcome Section */}
+      <View style={{ padding: 20, borderRadius: 20, backgroundColor: colors.card }}>
         <Text
           style={{
-            fontSize: 30,
+            fontSize: 32,
             fontWeight: "bold",
             textAlign: "center",
-            marginTop: 20,
+            color: colors.white,
+            marginTop: 10,
           }}
         >
           Welcome to UniConnect
         </Text>
+
         <Text
           style={{
             color: colors.gray,
-            fontSize: 20,
+            fontSize: 18,
             textAlign: "center",
             marginTop: 10,
           }}
         >
           Connect with your university community
         </Text>
+
         <Text
           style={{
             color: colors.gray,
-            fontSize: 20,
+            fontSize: 18,
             textAlign: "center",
-            marginTop: 10,
+            marginTop: 4,
           }}
         >
           Join us and explore the possibilities
         </Text>
-        <Button
-          text="Get Started"
-          // onPress={() => router.push("/(auth)/SignUp")}
-          onPress={() => router.push("/(auth)/LogIn")}
 
-        />
+        {/* Get Started Button */}
+        <View style={{ marginTop: 30 }}>
+          <Button
+            text="Get Started"
+            onPress={() => router.push("/(tabs)/Home")}
+            loading={false}
+          />
+        </View>
+
+        {/* Already have an account */}
         <Pressable onPress={() => router.push("/(auth)/LogIn")}>
           <Text
             style={{
               color: colors.gray,
               fontSize: 16,
               textAlign: "center",
-              marginTop: 10,
+              marginTop: 20,
             }}
           >
             Already have an account?{" "}
